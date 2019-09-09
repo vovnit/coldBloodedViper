@@ -1,0 +1,18 @@
+{% include 'header' %}
+
+import UIKit
+
+struct {{ module_info.name }}Builder {
+    static func getModule() -> UIViewController {
+        guard let controller = UIStoryboard(name: "{{ module_info.name }}Storyboard", bundle: nil).instantiateInitialViewController() as? {{ module_info.name }}View else {
+            fatalError("error while init login")
+        }
+        controller.presenter = {{ module_info.name }}Presenter(
+            view: controller, 
+            interactor: {{ module_info.name }}Interactor(), 
+            wireframe: {{ module_info.name }}Router()
+        )
+
+        return controller
+    }
+}

@@ -1,0 +1,30 @@
+# Template information section
+name: coldBloodedViper
+summary: viper with initialization in builder and relying on storyboards
+author: Vladimir Nitochkin
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+- {name: Module/Presenter.swift, path: Module/Presenter.swift.liquid}
+- {name: Module/Router.swift, path: Module/Router.swift.liquid}
+- {name: Module/Contracts.swift, path: Module/Contracts.swift.liquid}
+- {name: Module/Interactor.swift, path: Module/Interactor.swift.liquid}
+- {name: Module/View.swift, path: Module/View.swift.liquid}
+- {name: Module/Entity.swift, path: Module/Entity.swift.liquid}
+- {name: Builder.swift, path: Module/Builder.swift.liquid}
+- {name: Storyboard.storyboard, path: Module/Storyboard.storyboard.liquid}
+
+# The declarations for test files
+test_files:
+- {name: Tests/Presenter.swift, path: Tests/Presenter.swift.liquid}
+- {name: Tests/Router.swift, path: Tests/Router.swift.liquid}
+- {name: Tests/Contracts.swift, path: Tests/Contracts.swift.liquid}
+- {name: Tests/Interactor.swift, path: Tests/Interactor.swift.liquid}
+- {name: Tests/View.swift, path: Tests/View.swift.liquid}
+- {name: Tests/Entity.swift, path: Tests/Entity.swift.liquid}
+- {name: Builder.swift, path: Module/Builder.swift.liquid}
+
+# Template dependencies
+dependencies:

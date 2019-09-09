@@ -1,0 +1,26 @@
+{% include 'header' %}
+
+import UIKit
+
+class {{ module_info.name }}View: <#UIViewController#> {
+    // - MARK: viper connections
+    var presenter: {{ module_info.name }}PresenterProtocol!
+    private var object: {{ module_info.name }}Entity!
+
+    // - MARK: ui configuration
+    private func confugireUI() {
+
+    }
+
+    // - MARK: callbacks
+     override func viewDidLoad() {
+        super.viewDidLoad()
+        confugireUI()
+    }
+}
+
+extension {{ module_info.name }}View: {{ module_info.name }}ViewProtocol {
+    func set(object: {{ module_info.name }}Entity) {
+        
+    }
+}

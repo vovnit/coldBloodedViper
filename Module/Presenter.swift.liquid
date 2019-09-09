@@ -1,0 +1,20 @@
+{% include 'header' %}
+
+import Foundation
+
+class {{ module_info.name }}Presenter {
+    // - MARK: viper connections
+    weak private var view: {{ module_info.name }}ViewProtocol?
+    private var interactor: {{ module_info.name }}InteractorProtocol
+    private var wireframe: {{ module_info.name }}RouterProtocol
+    
+    init(view: {{ module_info.name }}ViewProtocol, interactor: {{ module_info.name }}InteractorProtocol, wireframe: {{ module_info.name }}RouterProtocol) {
+        self.view = view
+        self.interactor = interactor
+        self.wireframe = wireframe
+    }
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}PresenterProtocol {
+    <#{{ module_info.name }}PresenterProtocol implementation#>
+}
