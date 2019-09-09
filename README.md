@@ -4,14 +4,24 @@ Custom [Generamba](https://github.com/strongself/Generamba) template for VIPER w
 Structure is the following:
 
 ModuleName
+
 | Module
+
 | | Presenter
+
 | | Router
+
 | | Contracts
+
 | | Interactor
+
 | | View
+
 | | Entity
+
 | | Storyboard
+
 | Builder
+
 
 Same for tests.
